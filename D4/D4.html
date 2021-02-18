@@ -40,6 +40,30 @@
           class="list-group mx-auto text-center overflow-auto"
         ></ol>
         <div class="input-group my-3 mx-auto">
+          <label for="player" class="pt-1 mx-2 font-weight-bold"
+            >Name of player</label
+          >
+          <input
+            id="player"
+            type="name"
+            class="form-control"
+            placeholder="Name of the player"
+            aria-label="names"
+            aria-describedby="button-addon2"
+          />
+          <div class="input-group-append">
+            <button
+              id="addplayer"
+              class="btn btn-secondary"
+              type="button"
+              id="button-addon2"
+              onclick="addNewPlayer()"
+            >
+              Add Player
+            </button>
+          </div>
+        </div>
+        <div class="input-group my-3 mx-auto">
           <label for="numberofteams" class="pt-1 mx-2 font-weight-bold"
             >Number of teams</label
           >
@@ -64,14 +88,7 @@
         </div>
       </div>
     </div>
-    <!-- Test buttons  -->
-    <input type="text" id="player" value="" />
-    <input
-      type="button"
-      id="addPlayer"
-      value="Add new Task"
-      onclick="addNewPlayer()"
-    />
+
     <script
       src="D4_files/jquery-3.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
